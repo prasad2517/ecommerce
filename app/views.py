@@ -7,7 +7,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models import Count
 from django.db.models.functions import ExtractMonth,ExtractWeek
-from django.core.mail import send_mail
+
 from django.http import JsonResponse, request
 from django.contrib.auth.decorators import login_required  #This is for fun base
 from django.utils.decorators import method_decorator    # This is for class base
