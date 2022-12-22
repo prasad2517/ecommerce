@@ -7,7 +7,6 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models import Count
 from django.db.models.functions import ExtractMonth,ExtractWeek
-
 from django.http import JsonResponse, request
 from django.contrib.auth.decorators import login_required  #This is for fun base
 from django.utils.decorators import method_decorator    # This is for class base
@@ -307,7 +306,6 @@ class ProfileView(View):
         for w in worders:
             weekNumber.append(w['week'])
             weekOrder.append(w['count'])
-
 
         totalitem = 0
         form = CustomerProfileForm()
