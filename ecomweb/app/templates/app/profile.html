@@ -5,14 +5,14 @@
 
   
     <!-- Argon CSS -->
-    <link rel="stylesheet" href="/static/assets/css/argon.css?v=1.2.0" type="text/css">
+    
 
 <div class="container my-5">
   <div class="row">
       <h3>Welcome!</h3>
       <h4 class="text-capitalize">{{request.user}}</h4>
         {% if request.user.is_superuser %}
-        
+        <link rel="stylesheet" href="/static/assets/css/argon.css?v=1.2.0" type="text/css">
         <table class="table table-bordered col-6 table-default">
           <thead>
             <tr>
